@@ -5,16 +5,17 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
+import portfolioReducer from './reducers/portfolioReducer';
 import reportWebVitals from './reportWebVitals';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-let store = createStore(drinksReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(portfolioReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
