@@ -1,16 +1,12 @@
 import React, {Component} from 'react';
-// import {connect} from 'react-redux'
-// import { Document, Page } from 'react-pdf';
-// import {Max_Zander_SE_Resume_Feb_2021} from  '../documents/Max_Zander_SE_Resume_Feb_2021.pdf'
 
 class Resume extends Component {
 
     render() {
         return (
             <div>
-                {/* <Document file={Max_Zander_SE_Resume_Feb_2021}>
-                    <Page pageNumber={1} />
-                </Document> */}
+                <object className="resume" data="https://f675d2b8-bbcd-4b2f-b6a0-eafac903cb04.filesusr.com/ugd/b2c140_d9bc5b6a78d84f189e5a15e839fab2b5.pdf" type="application/pdf" width="100%" height="100%">
+                </object>
             </div>
         );
     }
