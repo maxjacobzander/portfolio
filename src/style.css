@@ -4,14 +4,23 @@
 
 body {
     font-family: 'Muli', sans-serif;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
     margin: 0;
 }
 
 .fade-in {
     transition: linear 0.7s ease-in;
+}
+
+.title {
+    background-color: #0A2239;
+    color: #f1f1f1;
+}
+
+.resume {
+    background-color: #1D84B9;
 }
