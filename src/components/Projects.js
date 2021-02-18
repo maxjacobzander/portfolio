@@ -5,12 +5,27 @@ import Bucket from '../documents/Bucket.jpg';
 import BravoScoreLibrary from '../documents/Bravo_Score_Library.jpg'
 
 class Projects extends Component {
+    constructor(){
+        super();
+        this.state = {
+            active: false
+        }
+    }
 
     panels = document.querySelectorAll('.panel')
 
+    
+
+
+
     render() {
+        let className = 'panel';
+        if (this.state.active === true) {
+            className += 'active';
+        }
+
         return (
-            <div class="project-container">
+            <div className="project-container">
                 <div className="panel active" style={{backgroundImage: `url(${LiquorCabinet})`}}>
                     <h3>Liquor Cabinet (React/Redux Front-End, Rails API Back-End)</h3>
                 </div>
