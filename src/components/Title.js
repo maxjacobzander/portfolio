@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class Landing extends Component {
+class Title extends Component {
     render() {
         return (
-            <div>
+            <div className="title">
                 <h1>Max Zander</h1>
                 <h1>Full-Stack Web Developer</h1>
             </div>
@@ -11,4 +11,4 @@ class Landing extends Component {
     }
 }
 
-export default Landing;
+export default Title;
