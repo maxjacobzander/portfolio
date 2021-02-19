@@ -3,6 +3,7 @@ import Landing from '../components/Title';
 import About from '../components/About';
 import Resume from '../components/Resume';
 import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 class Home extends Component {
     render() {
@@ -12,6 +13,7 @@ class Home extends Component {
                 <About />
                 <Resume />
                 <Projects />
+                <Contact />
             </div>
         );
     }
