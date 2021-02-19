@@ -17,12 +17,26 @@ body {
 }
 
 .title {
-    background-color: #0A2239;
     color: #f1f1f1;
+    height: 95vh;
+    background-size: 100%;
+}
+
+.title h1 {
+    
+}
+
+.about {
+    background-color: #0A2239;
 }
 
 .resume {
     background-color: #1D84B9;
+    height: 100vh;
+}
+
+.resume h1 {
+    color: #f1f1f1;
 }
 
 .project-container {
